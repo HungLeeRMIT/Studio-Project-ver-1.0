@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+/* Header, Navigation and Heading Styles */
+header {
+    width: 100%;
+    /* Add any specific styles for your header */
+}
+
+.video-heading {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px; /* Spacing from the nav bar */
+    margin-bottom: 20px; /* Spacing between heading and video container */
+}
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    padding: 20px;
+}
+.video-container {
+    width: 860px; /* Width of the video */
+    height: 480px; /* Height of the video */
+    background-color: #000; /* Black background for the video placeholder */
+    margin-bottom: 20px; /* Reduced spacing between video and remote */
+}
+/* Initially, we want to hide all the iframes */
+.hidden-div {
+    display: none;
+}
+
+/* Remote Container Styles */
+.remote-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Vertically align buttons */
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Reduced spacing between remote and footer */
+}
+.control {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px; /* Reduced space between buttons */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.control:hover {
+    background-color: #eee;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    /* Add any specific styles for your footer */
+}
+
+@media screen and (max-width: 768px) {
+    .video-container,
+    .remote-container {
+        width: 90%; /* Adjust to desired width on smaller screens */
+        margin-bottom: 20px; /* Adjust spacing for smaller screens */
+    }
+}
